@@ -1,0 +1,7 @@
+@mixin flex-column-gap($width,$gap,$padding){
+    width: $width;
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+    padding: $padding;
+}

@@ -1,0 +1,36 @@
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+   
+    .tarjeta {
+        width: 400px;
+        border: solid $bg-color;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        color: $color1;
+
+    img{
+        width: 370px;
+    }
+    h4{
+        font-size: 18px;
+        margin: 5px;
+        padding: 5px;
+    }
+    h6{
+        color: #888787ea;
+        margin: 5px;
+        padding: 5px;
+    }
+    button{
+        background-color: $color1;
+        color: #fff;
+        margin: 5px;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+    }
+ }

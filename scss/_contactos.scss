@@ -1,0 +1,82 @@
+.contactos{
+    font-size: 20px;
+    margin: 30px auto;
+    color: $color1;
+    padding: 30px;
+    background-color: $bg-color2;
+    display: grid;
+    row-gap: 10px;
+    button{
+        padding: 10px 15px;
+        font-size: 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+    .dato-nombre{
+        @media (max-width: 576px){
+            width: 300px;
+            grid-template-columns: 1fr;
+        }
+       }
+       .dato-apellido{
+        @media (max-width: 576px){
+        width: 300px;
+        grid-template-columns: 1fr;
+        }
+    }
+    .dato-telefono{
+        @media (max-width: 576px){
+        width: 300px;
+        grid-template-columns: 1fr;
+        } 
+    }
+    .dato-mail{
+        @media (max-width: 576px){
+        width: 300px;
+        grid-template-columns: 1fr;
+        }
+    }
+    .dato-mensaje{
+        @media (max-width: 576px){
+        width: 300px;
+        height: 50px;
+        grid-template-columns: 1fr;
+        }
+    }
+    
+    .dato {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        input{
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $color1;
+        }
+        .mensajebox{
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $color1;
+        }
+     }
+    @media(max-width:768px){ 
+        grid-template-columns: 1fr;
+    }
+    @media (max-width: 576px){
+        width: 350px;
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+        align-items: center;
+    }
+    .buttonbox{
+        @media (max-width: 576px){
+        bottom: auto;
+        }
+    }
+ }
+ 
+ 
+
+
+
