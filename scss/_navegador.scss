@@ -18,6 +18,25 @@
            &:hover{
                color: #775c5c;
            }
+           @media (max-width: 768px){
+            color: $color1;
+           }
+           }
+           @media (max-width: 768px){
+            position: fixed;
+            top: 0;
+            left: -500px;
+            background-color: $bg-color2;
+            width: 60vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:space-evenly;
+            padding-top: 100px;
+            &:hover{
+                left: 0px;
+            }
            @media (max-width: 576px){
             color: $color1;
            }
@@ -37,11 +56,21 @@
             &:hover{
                 left: 0px;
             }
-
            }
          }
         .menu{
             display: none;
+
+            @media (max-width: 768px) {
+                display: block;
+                color: $color1;
+                font-size: 30px;
+                margin: 10px;
+                order: -1;
+                &:hover + ul{
+                left: 0px;
+                }
+            }             
             @media (max-width: 576px) {
                     display: block;
                     color: $color1;
@@ -49,7 +78,7 @@
                     margin: 10px;
                     order: -1;
                     &:hover + ul{
-                        left: 0px;
+                    left: 0px;
                     }
                 }
          }
